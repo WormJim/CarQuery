@@ -10,9 +10,7 @@ import { ParamMembers } from './TrimParamsMembersMap';
 
 const CARQUERY_API_URL = 'https://www.carqueryapi.com/api/0.3/';
 
-const assign = (to, from) => {
-	return Object.assign(to, from);
-};
+const assign = (target: unknown, source: unknown) => Object.assign(target, source)
 
 export class CarQuery {
     private config: AxiosRequestConfig = {
